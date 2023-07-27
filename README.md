@@ -1,16 +1,34 @@
-# taskmanager
+# Installation and Setup
 
-A new Flutter project.
+### Front-end (Flutter)
 
-## Getting Started
+1. Clone the repository: `git clone <repository-url>`
+2. Navigate to the Flutter project directory: `cd task-management-flutter`
+3. Install dependencies: `flutter pub get`
+4. Run the application: `flutter run`
 
-This project is a starting point for a Flutter application.
+### Back-end (Buffalo)
 
-A few resources to get you started if this is your first Flutter project:
+1. Clone the repository: `git clone <repository-url>`
+2. Navigate to the Buffalo project directory: `cd task-management-buffalo`
+3. Install dependencies: `go mod tidy`
+4. Set up the database: Update the `database.yml` file with your database credentials and run database migrations.
+5. Start the server: `buffalo dev`
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Configuration
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Front-end configuration: Update the API endpoint in the `lib/utils/api.dart` file to match the server address and port.
+- Back-end configuration: Update the `database.yml` file with your database credentials and ensure the required environment variables are set.
+
+## Technologies Used
+
+- Flutter: A UI toolkit for building natively compiled applications for mobile, web, and desktop platforms.
+- Buffalo: A Go web development eco-system that provides a simple and elegant framework for building scalable and performant applications.
+
+## Contributing
+
+Contributions are welcome! If you encounter any issues or have suggestions for improvement, please submit a pull request or open an issue.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). Feel free to use and modify the code according to the terms of this license.
